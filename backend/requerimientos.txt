@@ -1,0 +1,21 @@
+-creamos un entorno virtual, esto para aislar este proyecto de otro que podriamos crear, para no instalar modulos de python de manera global
+- lo creamos con : >pip install virtualenv
+-ejecutamos con: >virtualenv venv, crea la carpeta venv
+-creamos la carpeta src de forma manual, la cual va a tener el codigo del proyecto entero
+-acctivamos el entorno virtual abriendo otra consola con:.\venv\Scripts\activate.bat o .\venv\Scripts\activate
+
+-ejecutar el servidor en (venv): >python src/app.py
+
+-instalamos los modulos:
+    -flask y la DB: pip install flask Flask-PyMongo flask-cors
+
+    (flask es un framework del servidor que nos permite crear nuestra resp API, instalamos el driver de conexion Flask-PyMongo, servidor en si mismo (flask-cors))
+
+
+
+En otra terminal
+> mongo
+>show dbs
+>use pythonreactdb
+>db.users.find()
+>db.users.find().pretty()
